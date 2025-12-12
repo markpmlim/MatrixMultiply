@@ -18,11 +18,11 @@ In the debug area, the **(lldb)** prompt will appear when the program program pa
 
 ![](Documentation/DebuggingToolbar.png)
 
-The reader could check if the comments made by the author are correctly by stepping into each instruction. Given below is a memory dump of **arr0** and **arr1**. 
+The reader could check if the comments made by the author are correct by stepping into each instruction. Given below is a memory dump of **arr0** and **arr1**. 
 
 ![](Documentation/MemoryDump.png)
 
-The size of each double floating point is 8 bytes and the values are stored in Little-Endian order. So, 1.0 is presented as **00 00 00 00 00 00 f0 3f** and 32.0 as **00 00 00 00 00 00 40 40**. The binary representation of 1.0 is **0011 1111 1111 0000 ... 0000** and -1.0 is **1011 1111 1111 0000 ... 0000*** (in Big Endian format). In Little Endian format,  bit 63 is the sign bit. The  bits 62-52 (11 bits) represents the exponent and the rest of the bits (bits 51-0) represents the mantissa. Web link 2 will be helpful.
+The size of each double floating point is 8 bytes and the values are stored in Little-Endian order. So, 1.0 is presented as **00 00 00 00 00 00 f0 3f** and 32.0 as **00 00 00 00 00 00 40 40**. The binary representation of 1.0 is **0011 1111 1111 0000 ... 0000** and -1.0 is **1011 1111 1111 0000 ... 0000*** (in Big Endian format). In Little Endian format,  bit 63 is the sign bit. The  bits 62-52 (11 bits) represents the exponent and the rest of the bits (bits 51-0) represents the mantissa. Web link 2 will be helpful during the step-by-step debugging process.
 
 The diagram below shows a sequence of pauses while bugging the **printYMMReg** routine:
 
