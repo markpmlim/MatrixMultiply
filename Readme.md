@@ -2,7 +2,11 @@
 
 ### Overview
 
-AVX instructions were introduced in 2011 with the release of the Sandy Bridge CPU from Intel. The instructions support 64-bit and 32-bit float-pointing operations. Four quad words of data (4 x 8 x 8 bits) can be loaded or stored or operated on by just a single VEX-prefix encoded AVX instruction. The 256-bit registers (ymm0-ymm15) can also operate on eight double words of data (8 x 4 x 8). A single precision floating point is 4 bytes (a double word) and a double precision floating point is 8 bytes (a quad word)
+AVX instructions were introduced in 2011 with the release of the Sandy Bridge CPU from Intel. Four quad words of data (4 x 8 x 8 bits) can be loaded or stored or operated on by just a single VEX-prefix encoded AVX instruction. There are AVX instructions which operate on eight double words of data (8 x 4 x 8). 
+
+A single precision floating point is 4 bytes (a double word) and a double precision floating point is 8 bytes (a quad word). For example, **vmovaps** and **vmovapd** can move single and double precision floating points.
+
+A long integer is 8 bytes (64 bits) and an integer is 4 bytes (32 bits). The instructions **vmovdqa** and **vmovdqu** aligned packed integers and unaligned packed integers respectively. These 2 instructions can be used load/store 256 bits of data from and to memory.
 
 ### Details
 
