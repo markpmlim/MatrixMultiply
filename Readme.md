@@ -12,7 +12,7 @@ A long integer is 8 bytes (64 bits) and an integer is 4 bytes (32 bits). The ins
 
 I came across an article which presented a method of implementing a 4x4 matrix multiplication using SIMD instructions. The reader can visit the site listed under the section *Weblink* for more details.
 
-The assembly source code was originally written and assembled with GAS (gnu as) for the Windows OS. The default assembler on macOS is a version of GAS. Out-of-the-Box,  XCode has good support for debugging  GAS assembly programs written in AT&T and Intel synax.
+The assembly source code was originally written and assembled with GAS (gnu as) for the Windows OS. The default assembler/compiler on macOS is the clang which can assemble GAS syntax. Out-of-the-Box,  XCode has good support for debugging  GAS assembly programs written in AT&T and Intel synax.
 
 The reader can assemble and debug this program step-by-step from within XCode.  Just click on the gutter next to a line of assembly source code to create a breakpoint.
 
