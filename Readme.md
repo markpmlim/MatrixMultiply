@@ -14,7 +14,7 @@ The reader can assemble and debug this program step-by-step from within XCode.  
 
 ![](Documentation/Debugging0.png)
 
-In the debug area, the **(lldb)** prompt will appear when the program program pauses at the breakpoint. the user can click on the controls in the Debugging Toolbar to **step into**, **step over** or **continue program execution** etc.
+In the debug area, the **(lldb)** prompt will appear when the program program pauses at the breakpoint. The user can click on the controls in the Debugging Toolbar to **step into**, **step over** or **continue program execution** etc.
 
 ![](Documentation/DebuggingToolbar.png)
 
