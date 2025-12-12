@@ -2,7 +2,7 @@
 # 4x4 matrix multiplication using ymm registers
 # Todo: print the product of the 4x4 matrix multiplication
 # [  1,  3,  5,  7 ]   [  2,  4,  6,  8 ]     [  304,   336,   368,   400 ]
-# [  9, 11, 13, 15 ] x [ 10, 12, 14, 16 ]  =  [  752,   848,   944,  1024 ]
+# [  9, 11, 13, 15 ] x [ 10, 12, 14, 16 ]  =  [  752,   848,   944,  1040 ]
 # [ 17, 19, 21, 23 ]   [ 18, 20, 22, 24 ]     [ 1200,  1360,  1520,  1680 ]
 # [ 25, 27, 29, 31 ]   [ 26, 28, 30, 32 ]     [ 1648,  1872,  2096,  2320 ]
 
@@ -100,3 +100,4 @@ _main:
         mov         %rbp, %rsp              # restore the prologue's rsp
         pop         %rbp
         ret
+
