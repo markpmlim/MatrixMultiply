@@ -45,19 +45,20 @@ We are assuming that the *callee* functions called by **main** do not change the
 b) AVX instructions like **vmovapd** , **vmulpd**  etc. require memory to be aligned at 32-byte boundaries.
 
 The prologue of a function:
-
+```assembly
         push    %rbp                
         mov     %rsp, %rbp
+```
 
 will align binary code on a 16-byte boundary. In order to align stack memory at 32-byte boundaries, one can use the instruction:
-
+```assembly
         and     $-32, %rsp          # 0xFFFFFFFFFFFFFFE0
-
+```
 The epilogue of a function:
-
+```assembly
         mov     %rbp, %rsp              
         pop     %rbp
-
+```
 will restore the rsp which was saved in the rbp register and pop the old rbp register off the stack.
 
 
